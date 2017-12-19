@@ -1,5 +1,6 @@
 package com.elastic.test.model;
 
+import java.io.Serializable;
 import java.util.List;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +12,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class PermissionGroup {
+public class PermissionGroup implements Serializable {
 
 	private String name;
 

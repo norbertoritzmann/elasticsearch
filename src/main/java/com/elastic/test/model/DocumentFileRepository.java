@@ -5,6 +5,6 @@ import org.springframework.data.domain.*;
 
 public interface DocumentFileRepository extends ElasticsearchRepository<DocumentFile, String> {
 	
-	Page<DocumentFile> findByContentAndReadPermissionGroups_users(String name, Integer userCode, Pageable pageable);
+	Page<DocumentFile> findByContentAndReadPermissionGroups_users(String content, Integer user, Pageable pageable);
 	
 }
